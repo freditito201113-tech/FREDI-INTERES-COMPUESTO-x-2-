@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Interés Compuesto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Interés Compuesto</h1>
+
+    <label for="capital">Capital Inicial (C):</label>
+    <input type="number" id="capital" placeholder="Ej: 1000">
+
+    <label for="tasa">Tasa de Interés (%):</label>
+    <input type="number" id="tasa" placeholder="Ej: 5">
+
+    <label for="tiempo">Tiempo:</label>
+    <input type="number" id="tiempo" placeholder="Ej: 2">
+
+    <label for="unidadTiempo">Unidad de tiempo:</label>
+    <select id="unidadTiempo">
+      <option value="dias">Días</option>
+      <option value="meses">Meses</option>
+      <option value="anios">Años</option>
+    </select>
+
+    <label for="frecuencia">Frecuencia de capitalización:</label>
+    <select id="frecuencia">
+      <option value="365">Diaria</option>
+      <option value="12">Mensual</option>
+      <option value="1">Anual</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
